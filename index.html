@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <h1 style="text-align: center;">Room Booking</h1>
+
+    <div id="room-list" class="room-card-container">
+        <!-- Room cards will be displayed here -->
+    </div>
+
+    <div id="booking-form" style="display: none;">
+        <h2>Book a Room</h2>
+        <select id="room-select">
+            <!-- Room options will be added dynamically using JavaScript -->
+        </select>
+        <label for="booking-date">Select a Date:</label>
+        <input type="date" id="booking-date" required>
+        <!-- Added div to display the selected date -->
+        <div id="selected-date" style="display: none;">
+            <h3>Selected Date:</h3>
+            <p id="selected-date-value"></p>
+        </div>
+        <h3>Select a Time Slot:</h3>
+        <div id="time-slots">
+            <!-- Time slots will be displayed here -->
+        </div>
+        <button id="return-home-button" style="display: none;">Return to Home</button>
+        <button id="cancel-button" style="display: none;">Cancel</button>
+        <button id="cancel-booking-button" style="display: none;">Cancel Booking</button>
+    </div>
+
+    <div id="user-bookings" style="display: none;">
+        <h2>Your Bookings</h2>
+        <ul id="booking-list">
+            <!-- User's bookings will be displayed here -->
+        </ul>
+        <p id="no-bookings-message" style="display: none;">There are no bookings.</p>
+        <button id="close-bookings">Close</button>
+    </div>
+
+    <!-- Initially set "View Your Bookings" button to display: none -->
+    <button id="view-bookings" style="display: none;">View Your Bookings</button>
+
+    <div id="cancel-popup" style="display: none;">
+        <h3>Select Time Slots to Cancel:</h3>
+        <div id="cancel-list">
+            <!-- Checkboxes for selecting time slots to cancel will be displayed here -->
+        </div>
+        <button id="cancel-popup-button">Cancel</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

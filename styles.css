@@ -1,0 +1,53 @@
+
+        /* Add your CSS styles here */
+        /* Example: Style for room cards */
+        body {
+            background-image: url('https://www.wework.com/ideas/wp-content/uploads/sites/4/2020/04/WeWork_LargeConferenceRoom-1440x810.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center the content vertically and horizontally */
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Add your CSS styles here */
+        /* Example: Style for room cards */
+        .room-card-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .room-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        }
+
+        .room-card:hover {
+            background-color: #f0f0f0;
+        }
+
+        .booking-time-slot {
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        }
+
+        .unavailable-time-slot {
+            background-color: #f0f0f0;
+            cursor: not-allowed;
+        }
